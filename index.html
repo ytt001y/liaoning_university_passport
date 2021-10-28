@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				margin:0px;
+			  background-image:url('../../images/index/regen/bg.jpg');
+			  background-position:center top;
+			  background-repeat:no-repeat;
+			  background-attachment:fixed;
+			  background-size:cover;
+			  position:static;
+			  left:auto;
+			  width:874px;
+			  margin-left:0;
+			  margin-right:0;
+			  text-align:left;
+			}
+			.zhezhao{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				opacity: 0.5;
+				
+			}
+			.tankuang{
+				display: flex;
+				justify-content: center;
+				background: #fff;
+				width: 50%;
+				height: 25%;
+				border-radius: 5px;
+				margin:70% 30%;
+				position:absolute;
+    			z-index:0;
+			}
+			#header{
+				height: 40px;
+			}
+			#header-right{
+				font-size: 30px;
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
+				background: red;
+				color: #fff;
+				right: 10px;
+				top: 10px;
+				text-align: center;
+				opacity: 0.5;
+			}
+			#text{
+				font-size: 30px;
+				display: flex;
+				justify-content: center;
+				margin-top: 10%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="zhezhao" id='zhezhao'>
+			<div class="tankuang">
+				<div id="header">
+					<span id="text">声明：本二维码免费使用，禁止明码标价售卖。且二维码仅供学生使用，禁止提供给外来商家，禁止外来商家、机构等使用二维码进校进行发传单，打广告等商业宣传行为，一经发现立刻更新二维码，导致宣传人员出不了学校后果自负。欢迎同学们留言投诉</span>
+					<div id="header-right" onclick="hidder()">X</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+			function hidder(){
+				document.getElementById('zhezhao').style.display="none";
+				location.href="first.html";
+			}
+		</script>
+	</body>
+</html>
+
